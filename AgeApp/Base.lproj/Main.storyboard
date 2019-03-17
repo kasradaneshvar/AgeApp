@@ -18,39 +18,18 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter Birthdate" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dCf-Dj-UcE">
-                                <rect key="frame" x="38" y="98" width="310" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <datePicker contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="iOm-hn-Ki2">
-                                <rect key="frame" x="40" y="144" width="306" height="262"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="187" id="aJr-hD-e3z"/>
-                                    <constraint firstAttribute="width" secondItem="iOm-hn-Ki2" secondAttribute="height" multiplier="334:187" id="gdL-Ij-xBF"/>
-                                    <constraint firstAttribute="width" constant="334" id="wE3-bA-cmF"/>
-                                </constraints>
-                                <date key="date" timeIntervalSinceReferenceDate="574187262.73127401">
-                                    <!--2019-03-13 16:27:42 +0000-->
-                                </date>
-                            </datePicker>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="You must be..." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jst-UZ-Fue">
-                                <rect key="frame" x="70" y="404" width="267" height="99"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tww-MF-ZeZ">
-                                <rect key="frame" x="16" y="545" width="343" height="30"/>
+                                <rect key="frame" x="16" y="542" width="343" height="30"/>
                                 <color key="backgroundColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
                                 <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="343" id="0cJ-ur-pBI"/>
                                     <constraint firstAttribute="width" constant="343" id="5Rg-ZG-3dB"/>
+                                    <constraint firstAttribute="width" secondItem="tww-MF-ZeZ" secondAttribute="height" multiplier="343:30" id="6GE-jr-RTE"/>
                                     <constraint firstAttribute="height" constant="30" id="Q9B-nT-3fe"/>
                                     <constraint firstAttribute="width" secondItem="tww-MF-ZeZ" secondAttribute="height" multiplier="343:30" id="cXP-Uz-ZfZ"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="30" id="nBi-1d-ZrX"/>
                                 </constraints>
-                                <state key="normal" title="Button"/>
+                                <state key="normal" title="Say my age!"/>
                                 <connections>
                                     <action selector="buttonComputeAge:" destination="BYZ-38-t0r" eventType="touchUpInside" id="KWt-iK-g1v"/>
                                 </connections>
@@ -66,6 +45,29 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter Birthdate" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dCf-Dj-UcE">
+                                <rect key="frame" x="38" y="98" width="310" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <datePicker contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="iOm-hn-Ki2">
+                                <rect key="frame" x="42" y="149" width="306" height="262"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="187" id="aJr-hD-e3z"/>
+                                    <constraint firstAttribute="width" secondItem="iOm-hn-Ki2" secondAttribute="height" multiplier="334:187" id="gdL-Ij-xBF"/>
+                                    <constraint firstAttribute="width" constant="334" id="wE3-bA-cmF"/>
+                                </constraints>
+                                <date key="date" timeIntervalSinceReferenceDate="574187262.73127401">
+                                    <!--2019-03-13 16:27:42 +0000-->
+                                </date>
+                            </datePicker>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="You must be..." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jst-UZ-Fue">
+                                <rect key="frame" x="54" y="419" width="267" height="81"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                         <accessibility key="accessibilityConfiguration">
@@ -74,11 +76,15 @@
                         <constraints>
                             <constraint firstItem="iOm-hn-Ki2" firstAttribute="top" secondItem="dCf-Dj-UcE" secondAttribute="bottom" constant="13" id="0hX-2X-gq9"/>
                             <constraint firstItem="iOm-hn-Ki2" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="38" id="21f-4k-zvm"/>
+                            <constraint firstItem="tww-MF-ZeZ" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="2G3-Nn-tKb"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="dCf-Dj-UcE" secondAttribute="trailing" constant="228" id="2x4-tl-m0g"/>
+                            <constraint firstItem="tww-MF-ZeZ" firstAttribute="top" secondItem="Jst-UZ-Fue" secondAttribute="bottom" constant="32" id="499-BV-JKg"/>
                             <constraint firstItem="q32-K0-eyu" firstAttribute="bottom" secondItem="iOm-hn-Ki2" secondAttribute="bottom" id="5p9-Oi-fik"/>
                             <constraint firstItem="iOm-hn-Ki2" firstAttribute="top" secondItem="dCf-Dj-UcE" secondAttribute="bottom" constant="45" id="6I4-8h-JRQ"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="tww-MF-ZeZ" secondAttribute="bottom" constant="44" id="6NN-2v-gSk"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="iOm-hn-Ki2" secondAttribute="trailing" constant="37" id="9XJ-LZ-91c"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="tww-MF-ZeZ" secondAttribute="trailing" constant="16" id="9aE-HJ-HZu"/>
+                            <constraint firstItem="tww-MF-ZeZ" firstAttribute="top" secondItem="Jst-UZ-Fue" secondAttribute="bottom" constant="143" id="A7S-A9-Fgm"/>
                             <constraint firstItem="dCf-Dj-UcE" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="34" id="AHG-fO-Tgf"/>
                             <constraint firstItem="iOm-hn-Ki2" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="44" id="EBk-hi-Dgl"/>
                             <constraint firstItem="iOm-hn-Ki2" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="35" id="EKo-fF-muz"/>
@@ -92,7 +98,9 @@
                             <constraint firstItem="tww-MF-ZeZ" firstAttribute="top" secondItem="iOm-hn-Ki2" secondAttribute="bottom" constant="95" id="J3i-pA-xcM"/>
                             <constraint firstItem="dCf-Dj-UcE" firstAttribute="leading" secondItem="iOm-hn-Ki2" secondAttribute="leading" id="J8p-d4-fbh"/>
                             <constraint firstItem="dCf-Dj-UcE" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="27" id="JXe-II-on9"/>
+                            <constraint firstItem="tww-MF-ZeZ" firstAttribute="top" secondItem="Jst-UZ-Fue" secondAttribute="bottom" constant="60" id="JaR-BQ-RGZ"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="dCf-Dj-UcE" secondAttribute="trailing" constant="27" id="LfZ-Hh-Ak4"/>
+                            <constraint firstItem="tww-MF-ZeZ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="Ljc-gt-3HH"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="iOm-hn-Ki2" secondAttribute="trailing" constant="38" id="NjL-7P-Aeu"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="tww-MF-ZeZ" secondAttribute="trailing" constant="16" id="OKe-Nx-Z3B"/>
                             <constraint firstItem="iOm-hn-Ki2" firstAttribute="top" secondItem="dCf-Dj-UcE" secondAttribute="bottom" constant="15" id="P90-0V-SPI"/>
@@ -106,14 +114,19 @@
                             <constraint firstItem="tww-MF-ZeZ" firstAttribute="top" secondItem="iOm-hn-Ki2" secondAttribute="bottom" constant="36" id="cF8-a2-Hp4"/>
                             <constraint firstItem="tww-MF-ZeZ" firstAttribute="top" secondItem="iOm-hn-Ki2" secondAttribute="bottom" constant="95" id="eN2-aO-ZwD"/>
                             <constraint firstItem="iOm-hn-Ki2" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="ePc-Eg-Tao"/>
+                            <constraint firstItem="Jst-UZ-Fue" firstAttribute="top" secondItem="iOm-hn-Ki2" secondAttribute="bottom" constant="8" id="eZP-nK-lRe"/>
                             <constraint firstItem="q32-K0-eyu" firstAttribute="top" secondItem="iOm-hn-Ki2" secondAttribute="bottom" constant="8" id="hTU-nb-A8k"/>
+                            <constraint firstItem="tww-MF-ZeZ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="jDP-Rj-dbs"/>
                             <constraint firstItem="iOm-hn-Ki2" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="38" id="jVZ-AL-icw"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="dCf-Dj-UcE" secondAttribute="trailing" constant="228" id="jiQ-2Q-fvv"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="iOm-hn-Ki2" secondAttribute="trailing" constant="44" id="kY7-t5-pCC"/>
                             <constraint firstItem="dCf-Dj-UcE" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="34" id="lWQ-Jm-mH3"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="tww-MF-ZeZ" secondAttribute="bottom" constant="43" id="nFA-Dd-1Lp"/>
                             <constraint firstItem="iOm-hn-Ki2" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="25" id="nIf-op-Ngu"/>
                             <constraint firstItem="iOm-hn-Ki2" firstAttribute="top" secondItem="dCf-Dj-UcE" secondAttribute="bottom" constant="15" id="qLy-3b-9ne"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="tww-MF-ZeZ" secondAttribute="bottom" constant="32" id="r1s-b0-NJB"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="iOm-hn-Ki2" secondAttribute="bottom" constant="83" id="r8U-Wf-YCv"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="tww-MF-ZeZ" secondAttribute="bottom" constant="32" id="sbV-1j-cjK"/>
                             <constraint firstItem="dCf-Dj-UcE" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="38" id="wWy-AY-Bo0"/>
                             <constraint firstItem="dCf-Dj-UcE" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="34" id="xLa-9K-VHk"/>
                             <constraint firstItem="iOm-hn-Ki2" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="70" id="yz2-A4-4Y0"/>
@@ -130,6 +143,7 @@
                     <connections>
                         <outlet property="DateChooseDate" destination="iOm-hn-Ki2" id="6U9-88-yeT"/>
                         <outlet property="TextEnterBirthdate" destination="dCf-Dj-UcE" id="e6K-Yb-xf8"/>
+                        <outlet property="labelAge" destination="Jst-UZ-Fue" id="7X6-DT-QT0"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
