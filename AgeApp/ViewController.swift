@@ -10,11 +10,17 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var TextEnterBirthdate: UILabel!
+        // What is "type`!`"?
+    @IBOutlet weak var DateChooseDate: UIDatePicker!
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
     }
 
-
+    @IBAction func buttonComputeAge(_ sender: UIButton) {
+        var 
+    }
+    
 }
 
